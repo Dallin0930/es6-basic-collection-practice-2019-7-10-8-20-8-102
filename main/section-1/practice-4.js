@@ -1,5 +1,9 @@
 'use strict';
 
-module.exports = function collectSameElements(collectionA, objectB) {
-  return '实现练习要求，并改写该行代码。';
+module.exports = function collectSameElements(collectionA, collectionB) {
+  return  collectionA.map(cosA => cosA.key).filter(cosB=> { 
+    return  (collectionB.value.find(cosB => cosA===cosB))!=null
+  }     
+  )
 }
+
