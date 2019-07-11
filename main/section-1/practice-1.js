@@ -1,5 +1,18 @@
 'use strict';
 
 module.exports = function collectSameElements(collectionA, collectionB) {
-  return '实现练习要求，并改写该行代码。';
+     console.log("hello world!")
+
+     return  collectionA.filter(cosA => { 
+       return  (collectionB.filter(cosB => cosA==cosB)).length >= 20
+       
+     }     
+          
+     ) 
 }
+
+
+
+
+
+
